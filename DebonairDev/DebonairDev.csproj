@@ -81,14 +81,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\css\bootstrap-theme.css" />
-    <Content Include="Assets\css\bootstrap-theme.min.css" />
-    <Content Include="Assets\css\bootstrap.css" />
-    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\images\workstation.jpg" />
+    <Content Include="Assets\scripts\custom.js" />
+    <Content Include="Assets\scripts\jquery-2.2.0.js" />
+    <Content Include="Assets\styles\bootstrap-theme.css" />
+    <Content Include="Assets\styles\bootstrap-theme.min.css" />
+    <Content Include="Assets\styles\bootstrap.css" />
+    <Content Include="Assets\styles\bootstrap.min.css" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Assets\js\bootstrap.js" />
-    <Content Include="Assets\js\bootstrap.min.js" />
-    <Content Include="Assets\js\npm.js" />
+    <Content Include="Assets\images\DebonairLogo.png" />
+    <Content Include="Assets\scripts\bootstrap.js" />
+    <Content Include="Assets\scripts\bootstrap.min.js" />
+    <Content Include="Assets\scripts\npm.js" />
+    <Content Include="Assets\styles\custom.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -103,10 +108,10 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Assets\css\bootstrap-theme.css.map" />
-    <Content Include="Assets\css\bootstrap-theme.min.css.map" />
-    <Content Include="Assets\css\bootstrap.css.map" />
-    <Content Include="Assets\css\bootstrap.min.css.map" />
+    <Content Include="Assets\styles\bootstrap-theme.css.map" />
+    <Content Include="Assets\styles\bootstrap-theme.min.css.map" />
+    <Content Include="Assets\styles\bootstrap.css.map" />
+    <Content Include="Assets\styles\bootstrap.min.css.map" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />

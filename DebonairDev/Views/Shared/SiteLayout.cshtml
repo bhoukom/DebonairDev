@@ -1,15 +1,68 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "Welcome";
 }
-
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html class="no-js" lang="en-us">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
+    <!-- META DATA -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
+    <!-- SEO -->
+    <title>@ViewBag.Title | Debonair Software Development</title>
+    <meta name="description" content="Web Application" />
+    <meta name="author" content="" />
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="@Url.Content("~/assets/images/favicons/favicon.ico")" type="image/x-icon" />
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700,400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css' />
+    <!-- STYLESHEETS -->
+    <!-- build:css assets/styles/screen.css -->
+    <link rel="stylesheet" media="screen, projection" href="@Url.Content("~/assets/styles/bootstrap.css")" />
+    <link rel="stylesheet" media="screen, projection" href="@Url.Content("~/assets/styles/custom.css")" />
+    <!-- SVG/PNG ICONS -->
+    <script src='@Url.Content("~/assets/scripts/jquery-2.2.0.js")' type='text/javascript'></script>
+    <script src='@Url.Content("~/assets/scripts/custom.js")' type='text/javascript'></script>
+    <script src='@Url.Content("~/assets/scripts/bootstrap.js")' type='text/javascript'></script>
 </head>
-<body>
-	@RenderBody()
+<body class="body">
+    <noscript><div class="no-js-message">JavaScript must be enabled to use this application.</div></noscript>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                    <div>
+                        <img src="~/Assets/images/DebonairLogo.png" alt="Debonair Software Development" class="logo" />
+                        <div class="logo-brandname">
+                            <div>Debonair Software Development</div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="nav navbar-nav navbar-left" role="menu">
+                        <li><a href="@ViewBag.BaseUrl#portfolio">Portfolio</a></li>
+                        <li><a href="@ViewBag.BaseUrl#skills">Skills</a></li>
+                        <li><a href="@ViewBag.BaseUrl#services">Services</a></li>
+                        <li><a href="@ViewBag.BaseUrl#contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <!--Mobile Navigation-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    @RenderBody()
 </body>
 </html>
