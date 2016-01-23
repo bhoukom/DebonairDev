@@ -8,11 +8,6 @@
         pause: false
     });
 
-    for (var i = 0; i < slideQty; i++) {
-        var insertText = '<li data-target="#featured" data-slide-to="' + i + '" class="' + (i === randSlide ? "active" : "") + '"></li>';
-        $('#featured ol').append(insertText);
-    }
-
     $('.fullHeight').css('height', windowHeight);
 
     //replace img inside carousel with a background image
@@ -27,8 +22,6 @@
         windowHeight = $(window).height();
         $('.fullHeight').css('height', windowHeight);
     });
-
-    $('#featured .item').eq(randSlide).addClass('active');
 
     $('body').scrollspy({
         target: 'header .navbar',
