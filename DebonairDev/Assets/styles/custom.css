@@ -1,7 +1,7 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 
-html { 
-  overflow-y: scroll; 
+html {
+    overflow-y: scroll;
 }
 
 body {
@@ -14,37 +14,38 @@ body {
     margin-top: 60px;
 }
 
-header{
+header {
 }
 
 .logo-brandname {
-    font-weight: 600;
+    font-weight: 500;
     float: right;
     margin-top: 13px;
+    font-size: 30px;
 }
 
-.logo-brandname div{
-    display: inline;
-}
+    .logo-brandname div {
+        display: inline;
+    }
 
-header .logo{
+header .logo {
     width: 70px;
 }
 
-header .container-fluid{
+header .container-fluid {
     padding-left: 0;
 }
 
-nav{
-   height: 65px;
+nav {
+    height: 65px;
 }
 
-.navbar-default .navbar-nav > li > a{
-   font-size: 17px;
-   font-weight: 600;
+.navbar-default .navbar-nav > li > a {
+    font-size: 17px;
+    font-weight: 600;
 }
 
-#mainNav > ul{
+#mainNav > ul {
     margin-top: 14px;
 }
 
@@ -57,26 +58,108 @@ nav{
     opacity: 0.85;
 }
 
-.navbar-default .navbar-brand{
-    color: #000;
+.navbar-default {
+    background-color: #3E3F41;
+    border-color: #3E3F41;
 }
 
-@media only screen
-and (max-width: 768px) {
-    header .logo-brandname{
-        font-size: small;
-        font-weight: 500;
-        margin-top: 0px;
-    }
-    
-    .navbar-default .navbar-nav > li > a{
-        color: #000;
+    .navbar-default .navbar-brand {
+        color: #d6d6d6;
     }
 
-    .logo-brandname div{
-        display: block;
+        .navbar-default .navbar-brand:hover {
+            color: #d6d6d6;
+        }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #d6d6d6;
     }
-    header .navbar-nav{
-        background-color: rgba(255, 255, 255, .8);
+
+        .navbar-default .navbar-nav > li > a:hover {
+            color: #b9b8b8;
+        }
+
+.hero {
+    height: 425px;
+    background-image: url('../../Assets/images/workstation.jpg');
+    background-repeat: no-repeat;
+    border: solid 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+    background-size: 100%;
+    padding-top: 80px;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.preamble {
+    font-size: 1.8em;
+    line-height: 1.1;
+    color: #d6d6d6;
+}
+
+.preamble .preamble-sub1 {
+    margin-left: 15px;
+}
+
+.preamble .preamble-sub2 {
+    margin-left: 45px;
+}
+
+.hdg_upper {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+    .hero {
+        padding-top: 110px;
+    }
+
+    .preamble {
+        font-size: 3em;
+        line-height: 1.61;
+        width: 66.66667%;
+    }
+
+    .preamble .preamble-sub1 {
+        margin-left: 75px;
+    }
+
+    .preamble .preamble-sub2 {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px){
+    .hero {
+        padding-top: 90px;
+    }
+
+    .preamble {
+        font-size: 2.6em;
+        line-height: 1.331;
+    }
+    .preamble .preamble-sub1 {
+        margin-left: 75px;
+    }
+
+    .preamble .preamble-sub2 {
+        margin-left: 150px;
+    }
+}
+
+.preamble {
+    height: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    header .navbar-nav {
+        background-color: #3E3F41;
+        background-color: rgba(62, 63, 65, .8);
     }
 }
