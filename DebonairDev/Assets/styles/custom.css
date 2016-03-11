@@ -63,21 +63,21 @@ nav {
     border-color: #3E3F41;
 }
 
-    .navbar-default .navbar-brand {
+.navbar-default .navbar-brand {
+    color: #d6d6d6;
+}
+
+    .navbar-default .navbar-brand:hover {
         color: #d6d6d6;
     }
 
-        .navbar-default .navbar-brand:hover {
-            color: #d6d6d6;
-        }
+.navbar-default .navbar-nav > li > a {
+    color: #d6d6d6;
+}
 
-    .navbar-default .navbar-nav > li > a {
-        color: #d6d6d6;
-    }
-
-        .navbar-default .navbar-nav > li > a:hover {
-            color: #b9b8b8;
-        }
+.navbar-default .navbar-nav > li > a:hover {
+    color: #b9b8b8;
+}
 
 .hero {
     height: 425px;
@@ -100,6 +100,8 @@ nav {
     font-size: 1.8em;
     line-height: 1.1;
     color: #d6d6d6;
+    height: 100%;
+    position: relative;
 }
 
 .preamble .preamble-sub1 {
@@ -134,7 +136,7 @@ nav {
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 768px){
+@media screen and (min-width: 568px) and (max-width: 768px) {
     .hero {
         padding-top: 90px;
     }
@@ -143,6 +145,7 @@ nav {
         font-size: 2.6em;
         line-height: 1.331;
     }
+
     .preamble .preamble-sub1 {
         margin-left: 75px;
     }
@@ -150,11 +153,6 @@ nav {
     .preamble .preamble-sub2 {
         margin-left: 150px;
     }
-}
-
-.preamble {
-    height: 100%;
-    position: relative;
 }
 
 @media only screen and (max-width: 768px) {
